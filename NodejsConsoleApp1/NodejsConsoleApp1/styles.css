@@ -1,5 +1,5 @@
 body {
-    background: url(tomato.jpeg) no-repeat center center fixed;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(tomato.jpeg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -7,7 +7,8 @@ body {
 }
 
 #app {
-    background-color: #EA4B5B;
+    font-family: 'Oswald', sans-serif;
+    background-color: #ef172d;
     text-align: center;
     color: #fff;
     height: 600px;
@@ -18,11 +19,50 @@ body {
     box-shadow: 18px 18px 34px 1px rgba(0, 0, 0, 0.68);
 }
 
-#timer{
-    margin-top: 75px;
-}
-
-img{
+img {
     height: 50px;
     width: 50px;
+}
+
+#logo {
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: -16px;
+}
+
+.main-title {
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+    font-size: 48px;
+    max-width: 260px;
+    margin: 0 auto;
+    line-height: 38px;
+    margin-bottom: 24px;
+}
+
+#dial-wrapper {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.btn-container {
+    margin: 0 auto;
+    margin-top: 22px;
+}
+
+.btn-outline-primary {
+    color: #ffffff;
+    background-color: transparent;
+    background-image: none;
+    border-color: #ffffff;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #ff3434;
+    border-color: #ffffff
+}
+
+.timer-wrapper{
+    margin: 0 auto;
 }

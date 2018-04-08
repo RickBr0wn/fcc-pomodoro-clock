@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <!-- Google Fonts Here -->
-    <link href="https://fonts.googleapis.com/css?family=Anton|Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Sacramento" rel="stylesheet">
     <link rel="stylesheet" href="./NodejsConsoleApp1/NodejsConsoleApp1/styles.css"><!-- CTRL Click Here -->
 </head>
 <body>
@@ -25,28 +25,58 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="https://www.freecodecamp.org/challenges/build-a-pomodoro-clock">Pomodoro Timer - Created as part of the Free Code Camp Front End Development Certification</a>
                 </li>
+            </ul>
         </div>
     </nav>
 
     <!-- Content -->
     <div class="container" id="app">
-        <img src="./NodejsConsoleApp1/NodejsConsoleApp1/pomo_logo.png" alt="pomodoro tomato timer" />
-        <div>Pomodoro Clock</div>
-        <div class="display-1" id="timer"></div>
+        <div class="row">
+            <div id="logo">
+                <img src="./NodejsConsoleApp1/NodejsConsoleApp1/pomo_logo.png" alt="pomodoro tomato timer" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 main-title">
+                Pomodoro Timer
+            </div>
+        </div>
+        <div class="row" id="dial-wrapper">
+            <div class="col-6">
+                <p>Length of Work Timer</p>
+                <input type="text" value="25.00" id="timer-length">
+            </div>
+            <div class="col-6">
+                <p>Length of Break Timer</p>
+                <input type="text" value="5.00" id="break-length">
+            </div>
+        </div>
+        <div class="row">
+            <div class="timer-wrapper">
+                <div id="timer"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="btn-container">
+                <button class="btn btn-outline-primary"><i class="fas fa-undo-alt"></i> Reset</button>
+                <button class="btn btn-outline-primary"><i class="fas fa-play"></i> Start</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="timer-wrapper"></div>
+        </div>
     </div>
-    
     <!-- Content Ends -->
 
     <footer>
         Made with  <i class="fas fa-coffee"></i>  and  <i class="fas fa-heart"></i>  - Rick Brown 2018</br>
         Created as part of the <a href="https://www.freecodecamp.org/rickbr0wn"><i class="fab fa-free-code-camp"></i> Free Code Camp</a> - Front End Development Certification</br>
         <a href="https://github.com/RickBr0wn"><i class="fab fa-github fa-2x"></i></a>
-
     </footer>
 
     <!-- HTML ENDS HERE -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="./NodejsConsoleApp1/NodejsConsoleApp1/app.js"></script><!-- CTRL Click Here -->
