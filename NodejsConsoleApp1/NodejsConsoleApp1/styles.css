@@ -1,14 +1,18 @@
 body {
-    background-color: #EF7C87;
+    background: url(tomato.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #app {
     background-color: #EA4B5B;
     text-align: center;
     color: #fff;
-    height: 700px;
+    height: 600px;
     width: 400px;
-    margin-top: 135px;
+    margin-top: 85px;
     padding: 0.25rem;
     border-radius: 5px;
     box-shadow: 18px 18px 34px 1px rgba(0, 0, 0, 0.68);
@@ -16,4 +20,9 @@ body {
 
 #timer{
     margin-top: 75px;
+}
+
+img{
+    height: 50px;
+    width: 50px;
 }

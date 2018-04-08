@@ -6,6 +6,3 @@ setInterval(function () {
     document.getElementById('timer').innerHTML = time;
     time--;
 }, 1000);
-
-
-
