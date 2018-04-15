@@ -51,3 +51,5 @@ function breakPlusClick(){
     bPlus++;
     $('#break-length').val(bPlus).trigger('change');
 }
+
+document.getElementById('timer-title').innerHTML = "WORK TIME"
