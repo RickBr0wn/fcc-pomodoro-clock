@@ -8,7 +8,7 @@ body {
 
 #app {
     font-family: 'Oswald', sans-serif;
-    background-color: #ef172d;
+    background-color: #922b35;
     text-align: center;
     color: #fff;
     height: 600px;
@@ -63,6 +63,12 @@ img {
     border-color: #ffffff
 }
 
+.btn-adjust{
+    border: none !important;
+    margin-top: -3.25rem;
+}
+
 .timer-wrapper{
     margin: 0 auto;
 }
+

@@ -44,11 +44,15 @@
         <div class="row" id="dial-wrapper">
             <div class="col-6">
                 <p>Length of Work Timer</p>
+                <div onclick="timePlusClick()" id="timePlus" class="btn btn-outline-primary btn-adjust">+</div>
                 <input type="text" value="25.00" id="timer-length">
+                <div onclick="timeMinusClick()" id="timeMinus" class="btn btn-outline-primary btn-adjust">-</div>
             </div>
             <div class="col-6">
                 <p>Length of Break Timer</p>
+                <div onclick="breakPlusClick()" id="breakPlus" class="btn btn-outline-primary btn-adjust">+</div>
                 <input type="text" value="5.00" id="break-length">
+                <div onclick="breakMinusClick()" id="breakminus" class="btn btn-outline-primary btn-adjust">-</div>
             </div>
         </div>
         <div class="row">
