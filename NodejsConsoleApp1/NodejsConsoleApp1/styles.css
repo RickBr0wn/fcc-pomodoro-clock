@@ -41,7 +41,6 @@ img {
 }
 
 #dial-wrapper {
-    max-width: 320px;
     margin: 0 auto;
 }
 
@@ -73,7 +72,7 @@ img {
 }
 
 #instruction-text{
-    font-size: 12px;
+    font-size: 14px;
     padding: 0px 77px;
 }
 
@@ -84,3 +83,6 @@ img {
     padding-top: 1.25rem;
 }
 
+.titles{
+    font-size: 20px;
+}

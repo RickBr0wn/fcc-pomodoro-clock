@@ -1,5 +1,10 @@
 'use strict';
 
+// Global Variables
+let workTime = 25*60;
+let timerCounter = 100;
+let state = true;
+
 $("#timer-length").knob({
     'min': 1,
     'max': 60,
@@ -31,6 +36,7 @@ $("#timer").knob({
 function timeMinusClick(){
     let tMinus = $("#timer-length").val();
     tMinus--;
+    workTime = tMinus;
     $('#timer-length').val(tMinus).trigger('change');
 }
 
@@ -53,3 +59,4 @@ function breakPlusClick(){
 }
 
 document.getElementById('timer-title').innerHTML = "WORK TIME"
+

@@ -59,13 +59,13 @@
         </section>
         <div class="row" id="dial-wrapper">
             <div class="col-6">
-                <p>Length of Work Timer</p>
+                <p class="titles">Length of Work Timer</p>
                 <div onclick="timePlusClick()" id="timePlus" class="btn btn-outline-primary btn-adjust">+</div>
                 <input type="text" value="25.00" id="timer-length">
                 <div onclick="timeMinusClick()" id="timeMinus" class="btn btn-outline-primary btn-adjust">-</div>
             </div>
             <div class="col-6">
-                <p>Length of Break Timer</p>
+                <p class="titles">Length of Break Timer</p>
                 <div onclick="breakPlusClick()" id="breakPlus" class="btn btn-outline-primary btn-adjust">+</div>
                 <input type="text" value="5.00" id="break-length">
                 <div onclick="breakMinusClick()" id="breakminus" class="btn btn-outline-primary btn-adjust">-</div>
@@ -79,13 +79,14 @@
         <div class="row">
             <div class="timer-wrapper">
                 <div id="timer"></div>
+                <div id="timerValue">25</div>
             </div>
         </div>
         <div class="row">
             <div class="btn-container">
                 <button class="btn btn-outline-primary">
                     <i class="fas fa-undo-alt"></i> Reset</button>
-                <button class="btn btn-outline-primary">
+                <button onclick="stateController()" class="btn btn-outline-primary" id="playButton">
                     <i class="fas fa-play"></i> Start</button>
             </div>
         </div>
@@ -115,6 +116,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+        <script src="./NodejsConsoleApp1/NodejsConsoleApp1/timer.js"></script>
     <script src="./NodejsConsoleApp1/NodejsConsoleApp1/app.js"></script>
     <!-- CTRL Click Here -->
 </body>
