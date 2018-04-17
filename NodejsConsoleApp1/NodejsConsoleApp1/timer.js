@@ -4,21 +4,21 @@ function stateController(){
     if(state){
         state = false;
         document.getElementById('playButton').innerHTML = `<i class="fas fa-stop"></i> Stop`;
-        timer('start', workTime);
+        startTimer('start', workTime);
     }else{
         state = true;
         document.getElementById('playButton').innerHTML = `<i class="fas fa-play"></i> Start`;
     }   
 }
 
-function timer(instruction, workTime){
-    document.getElementById('timerValue').innerHTML = workTime;
+function startTimer(instruction, workTime){
+    document.getElementById('timerValue').innerHTML = workTime/60;
     $("#timer").val(workTime).trigger('change');
 
-    setInterval(function(){
+    let sTimer = setInterval(function(){
         workTime --;
         $("#timer").val(workTime).trigger('change');
-        document.getElementById('timerValue').innerHTML = workTime;
+        document.getElementById('timerValue').innerHTML = (workTime/60).toFixed(2);
     }, 1000);
 }
 

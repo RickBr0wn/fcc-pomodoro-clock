@@ -11,7 +11,7 @@ body {
     background-color: #922b35;
     text-align: center;
     color: #fff;
-    height: 750px;
+    height: 780px;
     width: 400px;
     margin-top: 85px;
     padding: 0.25rem;
@@ -85,4 +85,10 @@ img {
 
 .titles{
     font-size: 20px;
+}
+
+#timerValue {
+    margin-top: -150px;
+    font-size: 61px;
+    margin-bottom: 75px;
 }

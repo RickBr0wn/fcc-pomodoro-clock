@@ -2,7 +2,6 @@
 
 // Global Variables
 let workTime = 25*60;
-let timerCounter = 100;
 let state = true;
 
 $("#timer-length").knob({
@@ -27,8 +26,8 @@ $("#break-length").knob({
 
 $("#timer").knob({
     'min': 1,
-    'max': 60,
-    'thickness': 0.06,
+    'max': workTime,
+    'thickness': 0.03,
     'fgColor': '#fff',
     'bgColor': 'rgba(0, 0, 0, 0.1)'
 });
