@@ -1,8 +1,11 @@
 'use strict';
 
 // Global Variables
-let workTime = 25*60;
 let state = true;
+let counter = 0;
+let totalTime = $("#timer-length").val()*60;
+let tickTime = totalTime;
+let timerSet;
 
 $("#timer-length").knob({
     'min': 1,
@@ -24,9 +27,9 @@ $("#break-length").knob({
     'bgColor': 'rgba(0, 0, 0, 0.1)'
 });
 
-$("#timer").knob({
+$("#timerDial").knob({
     'min': 1,
-    'max': workTime,
+    'max': tickTime,
     'thickness': 0.03,
     'fgColor': '#fff',
     'bgColor': 'rgba(0, 0, 0, 0.1)'
@@ -35,14 +38,17 @@ $("#timer").knob({
 function timeMinusClick(){
     let tMinus = $("#timer-length").val();
     tMinus--;
-    workTime = tMinus;
     $('#timer-length').val(tMinus).trigger('change');
+    document.getElementById('timerValue').innerHTML = tMinus  + ":00";
+    totalTime = tMinus*60;
 }
 
 function timePlusClick(){
     let tPlus = $("#timer-length").val();
     tPlus++;
     $('#timer-length').val(tPlus).trigger('change');
+    document.getElementById('timerValue').innerHTML = tPlus  + ":00";
+    totalTime = tPlus*60;
 }
 
 function breakMinusClick(){
