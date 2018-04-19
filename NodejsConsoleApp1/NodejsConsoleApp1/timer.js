@@ -1,24 +1,36 @@
 'use strict'
 
-function stateController(){
+
+function buttonStateController(){
     if(state){
         state = false;
         document.getElementById('playButton').innerHTML = `<i class="fas fa-stop"></i> Stop`;
-        startTimer('start', workTime);
+        startTimer();
     }else{
         state = true;
         document.getElementById('playButton').innerHTML = `<i class="fas fa-play"></i> Start`;
     }   
 }
 
-function startTimer(instruction, workTime){
-    document.getElementById('timerValue').innerHTML = workTime/60;
-    $("#timer").val(workTime).trigger('change');
+function startTimer(){ 
+    timerSet = setInterval(timerFunc, 1000);
+}
 
-    let sTimer = setInterval(function(){
-        workTime --;
-        $("#timer").val(workTime).trigger('change');
-        document.getElementById('timerValue').innerHTML = (workTime/60).toFixed(2);
-    }, 1000);
+function stopTimer(){
+    clearInterval(timerSet);
+}
+
+function timerFunc(){
+    counter++;
+    tickTime = totalTime - counter;
+    let minutes = Math.floor(tickTime/60);
+    let seconds = tickTime%60;
+    let time = minTwoDigits(minutes) + ":" + minTwoDigits(seconds);
+    $('#timerDial').val(tickTime).trigger('change');
+    document.getElementById('timerValue').innerHTML = time;
+}
+
+function minTwoDigits(number){
+    return (number < 10 ? "0" : "") + number;
 }
 
