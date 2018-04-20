@@ -18,6 +18,9 @@ function shadowElements(bool){
         document.getElementById('timeMinus').style.color = '#a06767';
         document.getElementById('breakPlus').style.color = '#a06767';
         document.getElementById('breakMinus').style.color = '#a06767';
+        document.getElementById('resetButton').style.color = '#a06767';
+        document.getElementById('resetButton').style.borderColor = '#a06767';
+        document.getElementById('resetButton').disabled = true;
         document.getElementById('timePlus').disabled = true;   
         document.getElementById('timeMinus').disabled = true;
         document.getElementById('breakPlus').disabled = true;
@@ -39,6 +42,9 @@ function shadowElements(bool){
         document.getElementById('timeMinus').style.color = '#fff';
         document.getElementById('breakPlus').style.color = '#fff';
         document.getElementById('breakMinus').style.color = '#fff';
+        document.getElementById('resetButton').style.color = '#fff';
+        document.getElementById('resetButton').style.borderColor = '#fff';
+        document.getElementById('resetButton').disabled = false; 
         document.getElementById('timePlus').disabled = false;   
         document.getElementById('timeMinus').disabled = false;
         document.getElementById('breakPlus').disabled = false;
