@@ -92,3 +92,21 @@ img {
     font-size: 61px;
     margin-bottom: 75px;
 }
+
+/* Footer */
+
+footer {
+    margin-top: 48px;
+    background-color: #343A40;
+    color: white;
+    padding: 18px 0 8px 0;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
+
+footer p {
+    margin-right: 30px;
+}
