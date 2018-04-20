@@ -8,6 +8,8 @@ let tickTime = totalTime;
 let timerSet;
 let originalTime;
 
+
+// Dial creation
 $("#timer-length").knob({
     'min': 1,
     'max': 60,
